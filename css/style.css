@@ -189,7 +189,7 @@ nav a {
     justify-content: flex-start;
     align-items: center;
     padding: 0px 80px;
-    background-image: url('../contents/Agencyy.jpg');
+    background-image: url('../contents/agency.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -775,7 +775,7 @@ body {
 .feature-box p {
     position: relative;
     z-index: 2;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ;
 }
 
 .feature-box:hover i.icon {
@@ -1207,6 +1207,7 @@ footer {
         padding: 20px;
         height: auto;
         min-height: 100vh;
+        background-image: url('../contents/agency-mobile.png'); /* Change background image for mobile */
         background-size: cover;
         background-position: right center;
         justify-content: center;
@@ -1567,8 +1568,8 @@ footer {
 
 /* Animation classes */
 .animate-on-scroll {
-    opacity: 0;
-    transform: translateY(20px);
+    /* opacity: 0; */
+    transform: translateY(15px);
     transition: all 0.6s ease-out;
 }
 
@@ -1597,11 +1598,12 @@ footer {
 .feature-box:nth-child(6) { transition-delay: 0.6s; }
 
 /* Update icon styles in feature boxes */
-.feature-box i.icon {
-    font-size: 40px; /* Increased from default size */
-    display: block;
+.feature-box i {
+    font-size: 30px; /* Increased from default size */
+    margin-bottom: 10px;
+    /* display: block;
     margin-bottom: 20px;
-    color: #1A73E8; /* Brand color for icons */
+    color: #1A73E8; */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: all 0.3s ease-in-out;
 }
