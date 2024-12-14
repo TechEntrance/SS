@@ -319,6 +319,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
+    margin-inline: 50px;
 }
 
 .category-item p {
@@ -340,7 +341,6 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     position: relative;
-    margin-left: 200px;
 }
 
 .number-box:hover {
@@ -738,7 +738,6 @@ html {
 .category-item p {
     margin-top: 15px; /* Decrease the gap between the number box and the paragraph */
     font-size: 16px; /* Optional: Adjust font size if needed */
-    margin-left: 200px;
 }
 
 /* Ensure team member cards are centered below the number boxes */
