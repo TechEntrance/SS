@@ -1347,8 +1347,9 @@ footer {
 
 .logos-scroll {
     display: flex;
-    animation: scroll 20s linear infinite;
-    /* Adjust animation duration as needed */
+    animation: scroll 30s linear infinite;
+    /* Ensure the width is enough to hold all logos */
+    width: max-content;
 }
 
 .logos {
@@ -1357,16 +1358,16 @@ footer {
     gap: 40px;
     padding: 0 20px;
     flex-shrink: 0;
+    /* Ensure logos stay in a row */
+    white-space: nowrap;
 }
 
 .logos img {
     width: 120px;
     height: auto;
     object-fit: contain;
-    /* Remove grayscale filter to show original colors */
     filter: none;
     transition: transform 0.3s ease;
-    /* Add transition for hover effect */
 }
 
 .logos img:hover {
@@ -1410,14 +1411,14 @@ footer {
     }
 
     .logos-scroll {
-        animation-duration: 15s;
+        animation-duration: 25s;
         /* Faster animation for mobile */
     }
 }
 
 @media (max-width: 480px) {
     .logos img {
-        width: 60px;
+        width: 65px;
     }
 
     .logos {
@@ -1426,7 +1427,7 @@ footer {
     }
 
     .logos-scroll {
-        animation-duration: 10s;
+        animation-duration: 20s;
         /* Even faster for smaller screens */
     }
 }
